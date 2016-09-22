@@ -13,12 +13,12 @@ import android.widget.TextView;
  */
 public class Grade11Activity extends AppCompatActivity {
 
-//    TextView functionsGraphs;
-//    TextView functionsSummary;
-//    TextView functionsDomain;
-//    TextView analyticalGeometry;
-//    TextView measurementFormulae;
-//
+    TextView functionsGraphs;
+    TextView functionsSummary;
+    TextView functionsDomain;
+    TextView analyticalGeometry;
+    TextView measurementFormulae;
+
 
 
 
