@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.1.1_91d4297756181ceceafb2c3b28cce14ba8c04218.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e0f3f95a1270acff572f31e67084e20aa47dc4aa">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/instant-run_4d574334a8396f2eac8c0a70a9e2981bbde20c67.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_be011d220157a2d955ed17c66c4591a7404ce049.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/com.android.support-multidex-1.0.1_7be73a6e430bbae11962fbf189f55a20e7cce8db.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/.gradle/caches/modules-2/files-2.1/com.fathzer/javaluator/3.0.1/2858833d5416801d8df6928ef4a9c9acb5e289e3/javaluator-3.0.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2858833d5416801d8df6928ef4a9c9acb5e289e3">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/javaluator-3.0.1_d143280637bed5c1ff3d14fc251d5badd7b9957d.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.1.1_0ff531dc707c7efa255b7233d72421e03de9d26c.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.1.1/3af19f153122737b372622fa6c81dd11a1c6b999/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/support-annotations-24.1.1_d87771f12c3c7a072735b3b57703a211acc7be96.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/exploded-aar/com.joanzapata.pdfview/android-pdfview/1.0.4/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="df559ab8a9d5d44cf0a49dbb2be402637b90ba90">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/com.joanzapata.pdfview-android-pdfview-1.0.4_0bc4ac88cbd2381e0e1e78b4c137cca2cf25b2ff.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.1.1_b3923829b8e0e9f65499f619f687e6dd4cfdce33.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f2b6a3086b7905b52382cc05c5a225316c07c2a6">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_335350aec2bb12ad8495371b844f4625b2a63169.jar" />
+    </item>
+    <item
+        jar="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/YolandaBreakfast/Documents/Projects/HelpMe/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.1.1_2c26c59292381539233a10b503b2a7f8723847c5.jar" />
+    </item>
+
+</items>

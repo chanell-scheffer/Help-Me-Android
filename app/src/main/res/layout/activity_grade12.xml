@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid">
+
+
+    <TextView
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/grade12Heading"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/grade12Heading"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:layout_above="@+id/functions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/functions"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/functions"
+        android:background="@android:color/white"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/calculus"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculus"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/calculus"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/white"
+        android:layout_above="@+id/notes"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notes"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/notes"
+        android:background="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:text="@string/analyticGeometry"
+        android:id="@+id/analyticGeometry"
+        android:background="@android:color/white"
+        android:layout_below="@+id/notes"
+        android:layout_marginTop="25dp"
+        android:layout_alignStart="@+id/nationalExam2014"
+        android:layout_alignEnd="@+id/nationalExam2014" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nationalExam2014"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/nationalExam2014"
+        android:background="@android:color/white"
+        android:layout_below="@+id/analyticGeometry"
+        android:layout_marginTop="26dp"
+        android:layout_alignStart="@+id/nationalExam2015" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nationalExam2015"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/nationalExam2015"
+        android:background="@android:color/white"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/nationalExam2014"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/help"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/textView4"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/eyes"
+        android:layout_weight="0.55"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/grade12Heading"
+        android:layout_alignStart="@+id/functions" />
+
+</RelativeLayout>

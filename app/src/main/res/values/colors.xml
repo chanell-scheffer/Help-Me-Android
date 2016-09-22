@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryLight">#303F9F</color>
+    <color name="colorAccent">#09030303</color>
+    <color name="green">#5a8b28</color>
+    <color name="LightGreen">#a4c639</color>
+    <color name="back_yellow">#FFD54F</color>
+    <color name="black">#19191b</color>
+    <color name="calculator_foreground">#5a8b28</color>
+    <color name="calculator_color">#000000</color>
+    <color name="divider">#bab1cd</color>
+    <color name="calculator_background">#000000</color>
+    <color name="calculator_screen">#d1e3e7</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="primary_text">#212121</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+</resources>
