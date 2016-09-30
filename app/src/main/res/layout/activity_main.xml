@@ -4,9 +4,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grid">
+    android:background="@drawable/grid"
 
-
+    >
 
 
     <Button
@@ -23,8 +23,8 @@
 
     <Button
         android:textColor="@android:color/white"
-        android:layout_width="250sp"
-        android:layout_height="40sp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:text="@string/grade12"
         android:id="@+id/grade12"
         android:background="@color/green"
@@ -47,16 +47,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/calcultor"
-        android:clickable="true"
-        android:onClick="clickImage"
-        android:src="@drawable/calc"
-        android:layout_alignTop="@+id/moreInfo"
-        android:layout_alignEnd="@+id/grade12" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,23 +67,37 @@
         android:layout_height="100dp"
         android:id="@+id/imageView2"
         android:src="@drawable/eyes"
-        android:layout_weight="0.55"
         android:layout_gravity="center_horizontal"
         android:background="@android:color/transparent"
-        android:layout_marginBottom="30dp"
         android:layout_above="@+id/grade10"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="@string/moreInfo"
-        android:textColor="@color/colorPrimary"
-        android:onClick="true"
-        android:textStyle="bold"
-        android:id="@+id/moreInfo"
         android:layout_marginTop="31dp"
-        android:layout_below="@+id/grade12"
-        android:layout_alignStart="@+id/grade12" />
+        android:layout_below="@id/grade12"
+        android:layout_alignEnd="@id/grade12"
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moreInfo"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:onClick="true"
+            android:visibility="visible"
+            android:id="@+id/moreInfo"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calcultor"
+            android:clickable="true"
+            android:onClick="clickImage"
+            android:src="@drawable/calc"
+             />
+    </LinearLayout>
 </RelativeLayout>

@@ -12,14 +12,6 @@ import android.widget.TextView;
  */
 public class Grade12Activity extends AppCompatActivity{
 
-    TextView functions;
-    TextView calculus;
-    TextView notes;
-    TextView analyticGeometry;
-    TextView nationalExam2014;
-    TextView nationalExam2015;
-
-
     @Override
     public void setRequestedOrientation(int requestedOrientation) {
         super.setRequestedOrientation(requestedOrientation);
@@ -50,11 +42,11 @@ public class Grade12Activity extends AppCompatActivity{
             case R.id.notes:
                 intent.putExtra(DisplayActivity.EXTRA_PDF_NAME, "gr_12_maths_algebra_exponents_surds_notes_summaries.pdf");
                 break;
-            case R.id.analyticGeometry:
+            case R.id.analyticalGeometry:
                 intent.putExtra(DisplayActivity.EXTRA_PDF_NAME, "gr_12_maths_analytical_geometry_theory_2.pdf");
                 break;
             case R.id.nationalExam2014:
-                intent.putExtra(DisplayActivity.EXTRA_PDF_NAME, "gr_12_maths_national_november_2014_paper_1_and_paper_2_questions_and_memos");
+                intent.putExtra(DisplayActivity.EXTRA_PDF_NAME, "gr_12_maths_national_november_2014_paper_1_and_paper_2_questions_and_memos.pdf");
                 break;
             case R.id.nationalExam2015:
                 intent.putExtra(DisplayActivity.EXTRA_PDF_NAME, "gr_12_maths_national_november_2015_exam_paper_1_paper_2_questions_memos.pdf");

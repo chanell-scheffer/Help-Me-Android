@@ -13,15 +13,6 @@ import android.widget.TextView;
  */
 public class Grade11Activity extends AppCompatActivity {
 
-    TextView functionsGraphs;
-    TextView functionsSummary;
-    TextView functionsDomain;
-    TextView analyticalGeometry;
-    TextView measurementFormulae;
-
-
-
-
     @Override
     public void setRequestedOrientation(int requestedOrientation) {
         super.setRequestedOrientation(requestedOrientation);

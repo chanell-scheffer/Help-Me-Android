@@ -24,7 +24,7 @@ import com.fathzer.soft.javaluator.Parameters;
 /**
  * Created by YolandaBreakfast on 2016/09/14.
  */
-public class Calculator extends MainActivity{
+public class Calculator extends MainActivity implements View.OnClickListener{
 
 
         // The function has one argument and its name is "sqrt"
@@ -49,7 +49,6 @@ public class Calculator extends MainActivity{
     private String lastResultObtain = "";
     private String currentDisplayedInput = "";
     private String inputToBeParsed = "";
-    private Calculator mCalculator;
     private static String PREFS_NAME = "memory";
     private Button button0, button1, button2, button3, button4, button5, button6, button7,
             button8, button9, buttonClear, buttonDivide, buttonMultiply, buttonSubtract,
@@ -71,6 +70,8 @@ public class Calculator extends MainActivity{
 
             @Override
             protected Double evaluate(Function function, Iterator arguments, Object evaluationContext) {
+
+
                 if (function == sqrt)
                     return Math.sqrt((Double) arguments.next());
                 else if(function == cuberoot){
@@ -129,8 +130,11 @@ public class Calculator extends MainActivity{
         params.add(combination);
         params.add(permutation);
     }
+
+
     public String getResult(String currentDisplay, String expressionUsedForParsing) {
         //Tries to parse the information as it is entered, if the parser can't handle it, the word error is shown on screen
+
         try {
             System.out.println("Displayed Output " + expressionUsedForParsing);
             currentSum = evaluator.evaluate(fixExpression(expressionUsedForParsing));
@@ -193,12 +197,13 @@ public class Calculator extends MainActivity{
 
 
     protected void onCreate(Bundle savedInstanceState) {
-
-        setContentView(R.layout.activity_calculator);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_calculator);
+
         outputResult = (TextView) findViewById(R.id.display);
         outputResult.setText("");
         shiftDisplay = (TextView) findViewById(R.id.shift_display);
@@ -272,43 +277,43 @@ public class Calculator extends MainActivity{
         labelCubeRoot.setText(Html.fromHtml(Helpers.cubeSquare));
         labelCube.setText(Html.fromHtml(Helpers.cubeRoot));
         labelPi.setText(Html.fromHtml(Helpers.pi));
-        button0.setOnClickListener((View.OnClickListener) this);
-        button1.setOnClickListener((View.OnClickListener) this);
-        button2.setOnClickListener((View.OnClickListener)this);
-        button3.setOnClickListener((View.OnClickListener)this);
-        button4.setOnClickListener((View.OnClickListener)this);
-        button5.setOnClickListener((View.OnClickListener)this);
-        button6.setOnClickListener((View.OnClickListener)this);
-        button7.setOnClickListener((View.OnClickListener)this);
-        button8.setOnClickListener((View.OnClickListener)this);
-        button9.setOnClickListener((View.OnClickListener)this);
-        buttonClear.setOnClickListener((View.OnClickListener)this);
-        buttonDivide.setOnClickListener((View.OnClickListener)this);
-        buttonMultiply.setOnClickListener((View.OnClickListener)this);
-        buttonSubtract.setOnClickListener((View.OnClickListener)this);
-        buttonAdd.setOnClickListener((View.OnClickListener)this);
-        buttonPercentage.setOnClickListener((View.OnClickListener)this);
-        buttonEqual.setOnClickListener((View.OnClickListener)this);
-        buttonDecimal.setOnClickListener((View.OnClickListener)this);
-        closeParenthesis.setOnClickListener((View.OnClickListener)this);
-        openParenthesis.setOnClickListener((View.OnClickListener)this);
-        buttonSingleDelete.setOnClickListener((View.OnClickListener)this);
-        buttonExp.setOnClickListener((View.OnClickListener)this);
-        buttonSquareRoot.setOnClickListener((View.OnClickListener)this);
-        buttonXSquare.setOnClickListener((View.OnClickListener)this);
-        buttonYPowerX.setOnClickListener((View.OnClickListener)this);
-        buttonSin.setOnClickListener((View.OnClickListener)this);
-        buttonCos.setOnClickListener((View.OnClickListener)this);
-        buttonTan.setOnClickListener((View.OnClickListener)this);
-        buttonLn.setOnClickListener((View.OnClickListener)this);
-        buttonLog.setOnClickListener((View.OnClickListener)this);
-        buttonRnd.setOnClickListener((View.OnClickListener)this);
-        buttonShift.setOnClickListener((View.OnClickListener)this);
-        buttonRad.setOnClickListener((View.OnClickListener)this);
-        buttonAbs.setOnClickListener((View.OnClickListener)this);
-        buttonMr.setOnClickListener((View.OnClickListener)this);
-        buttonMs.setOnClickListener((View.OnClickListener)this);
-        buttonMPlus.setOnClickListener((View.OnClickListener)this);
+        button0.setOnClickListener(this);
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
+        button7.setOnClickListener(this);
+        button8.setOnClickListener(this);
+        button9.setOnClickListener(this);
+        buttonClear.setOnClickListener(this);
+        buttonDivide.setOnClickListener(this);
+        buttonMultiply.setOnClickListener(this);
+        buttonSubtract.setOnClickListener(this);
+        buttonAdd.setOnClickListener(this);
+        buttonPercentage.setOnClickListener(this);
+        buttonEqual.setOnClickListener(this);
+        buttonDecimal.setOnClickListener(this);
+        closeParenthesis.setOnClickListener(this);
+        openParenthesis.setOnClickListener(this);
+        buttonSingleDelete.setOnClickListener(this);
+        buttonExp.setOnClickListener(this);
+        buttonSquareRoot.setOnClickListener(this);
+        buttonXSquare.setOnClickListener(this);
+        buttonYPowerX.setOnClickListener(this);
+        buttonSin.setOnClickListener(this);
+        buttonCos.setOnClickListener(this);
+        buttonTan.setOnClickListener(this);
+        buttonLn.setOnClickListener(this);
+        buttonLog.setOnClickListener(this);
+        buttonRnd.setOnClickListener(this);
+        buttonShift.setOnClickListener(this);
+        buttonRad.setOnClickListener(this);
+        buttonAbs.setOnClickListener(this);
+        buttonMr.setOnClickListener(this);
+        buttonMs.setOnClickListener(this);
+        buttonMPlus.setOnClickListener(this);
     }
 
     private void obtainInputValues(String input) {
@@ -473,8 +478,8 @@ public class Calculator extends MainActivity{
                 break;
             case "sin":
                 if (isInverse) {
-                    currentDisplayedInput += "asin(";
-                    inputToBeParsed += "asin(";
+                    currentDisplayedInput += "sin(";
+                    inputToBeParsed += "sin(";
                 } else {
                     currentDisplayedInput += "sin(";
                     inputToBeParsed += "sin(";
@@ -484,8 +489,8 @@ public class Calculator extends MainActivity{
                 break;
             case "cos":
                 if (isInverse) {
-                    currentDisplayedInput += "acos(";
-                    inputToBeParsed += "acos(";
+                    currentDisplayedInput += "cos(";
+                    inputToBeParsed += "cos(";
                 } else {
                     currentDisplayedInput += "cos(";
                     inputToBeParsed += "cos(";
@@ -495,8 +500,8 @@ public class Calculator extends MainActivity{
                 break;
             case "tan":
                 if (isInverse) {
-                    currentDisplayedInput += "atan(";
-                    inputToBeParsed += "atan(";
+                    currentDisplayedInput += "tan(";
+                    inputToBeParsed += "tan(";
                 } else {
                     currentDisplayedInput += "tan(";
                     inputToBeParsed += "tan(";
@@ -578,7 +583,7 @@ public class Calculator extends MainActivity{
         } else if (data.equals("=")) {
             String enteredInput = outputResult.getText().toString();
             // call a function that will return the result of the calculate.
-            String resultObject = mCalculator.getResult(currentDisplayedInput, inputToBeParsed);
+            String resultObject = getResult(currentDisplayedInput,inputToBeParsed);
             outputResult.setText(removeTrailingZero(resultObject));
         } else if (data.equals("Ans")) {
             String enteredInput = outputResult.getText().toString();

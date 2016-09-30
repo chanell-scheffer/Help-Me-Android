@@ -136,7 +136,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textStyle="bold"
-            android:textSize="14sp"
+            android:textSize="11sp"
             android:textColor="@color/calculator_background"
             android:padding="8dp"
             android:layout_marginRight="1dp"

@@ -23,21 +23,24 @@ public class Helpers {
     public static String squareRoot = "&radic;";
     public static String xSquare = "x<sup>2</sup>";
     public static String pi = "&pi;";
-    public static void displayErrorMessage(Context context){
+
+    public static void displayErrorMessage(Context context) {
         Toast.makeText(context, "Input field must not be zero", Toast.LENGTH_LONG).show();
     }
-    public static boolean isZero(EditText input){
-        if(Double.parseDouble(input.getText().toString()) == 0){
+
+    public static boolean isZero(EditText input) {
+        if (Double.parseDouble(input.getText().toString()) == 0) {
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
-    public static int getTopicId(Bundle bundle, String inputValue){
+
+    public static int getTopicId(Bundle bundle, String inputValue) {
         int id = 0;
-        if(bundle != null){
-            id  = bundle.getInt(inputValue);
+        if (bundle != null) {
+            id = bundle.getInt(inputValue);
         }
         return id;
     }
-
 }
