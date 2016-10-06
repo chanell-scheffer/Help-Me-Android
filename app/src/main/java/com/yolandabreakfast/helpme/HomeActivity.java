@@ -49,13 +49,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        boolean isFirstStart = prefs.getBoolean(getResources().getString(R.string.pref_previously_started), true);
-        if(!isFirstStart){
-            getStartedButton.setText("Continue");
-        }
-
-
     }
 
 
