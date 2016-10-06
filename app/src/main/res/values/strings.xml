@@ -8,7 +8,7 @@
     <string name="start">GET STARTED</string>
     <string name="intro">INTRODUCTION</string>
     <string name="about">ABOUT</string>
-    <string name="what">WELCOME TO HELP ME!\n\nThis is a great way of learning and strengthening your Mathematical abilities. This app has math cheats, slides with valuable information(From the Answer Series Textbook) and a scientific calculator to assist in any of your difficulties. If you are still confused about anything, click on "More Information"\tand it direct you to a website where you can search for any maths solution.\n\nHave fun!!!</string>
+    <string name="what">WELCOME TO HELP ME!\n\nThis is a great way of learning and strengthening your Mathematical abilities. This app has math cheats, slides with valuable information(From the Answer Series Textbook) and a scientific calculator to assist in any of your difficulties. If you are still confused about anything, click on "More Information"\tand it will direct you to a website where you can search for any maths solution.\n\nHave fun!!!</string>
     <string name="continue_button">CONTINUE</string>
     <string name="title_activity_taking_picture">TakingPicture</string>
 
@@ -100,5 +100,6 @@
     <string name="plus_minus">+/-</string>
     <string name="plot">Plot</string>
     <string name="asterisk">*</string>
+    <string name="pref_previously_started">first_start</string>
 
 </resources>
