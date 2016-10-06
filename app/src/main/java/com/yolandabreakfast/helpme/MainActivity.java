@@ -5,6 +5,7 @@ import android.content.ClipData;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
 import android.view.View;
@@ -75,7 +76,7 @@ public class MainActivity extends Activity {
         });
 
         calculator = (ImageView) findViewById(R.id.calcultor);
-        calculator.setOnClickListener(new View.OnClickListener(){
+        calculator.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -84,25 +85,30 @@ public class MainActivity extends Activity {
             }
 
 
-    });
+        });
         moreInfo = (TextView) findViewById(R.id.moreInfo);
         moreInfo.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                Intent in =new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.wolframalpha.com/examples/Math.html"));
+                Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.wolframalpha.com/examples/Math.html"));
                 startActivity(in);
             }
         });
 
-        }
+//        startActivity(new Intent(MainActivity.this, this.HomeActivity().getClass;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
 
 
-
-
-
+    }
 }
+
+
 
 
 
