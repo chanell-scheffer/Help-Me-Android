@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" android:id="@+id/ScrollView">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:background="@drawable/grid">
+    <TextView
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/grade11Heading"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/grade11Heading"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView2"
+    android:layout_below="@id/grade11Heading"
+    android:layout_toStartOf="@+id/functionsGraphs"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/functionsGraphs"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:id="@+id/functionsGraphs"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/scrollView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/functionsSummary"
+        android:id="@+id/functionsSummary"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/functionsGraphs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/functionsDomain"
+        android:id="@+id/functionsDomain"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:background="@android:color/white"
+        android:layout_marginTop="51dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/measurementFormulae"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/analyticalGeometry"
+        android:id="@+id/analyticalGeometry"
+        android:clickable="true"
+        android:textAlignment="center"
+        android:onClick="onClick"
+        android:layout_marginTop="34dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@android:color/white"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/functionsSummary"
+        android:layout_alignEnd="@+id/measurementFormulae"
+        android:layout_alignStart="@+id/functionsDomain"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/measurementFormulae"
+        android:id="@+id/measurementFormulae"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/analyticalGeometry"
+        android:layout_centerHorizontal="true" />
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/help"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/eyes"
+        android:layout_weight="0.55"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    </ScrollView>

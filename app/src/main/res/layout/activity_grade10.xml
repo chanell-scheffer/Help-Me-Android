@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" android:id="@+id/ScrollView">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="510dp"
+    android:background="@drawable/grid">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/help"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/eyes"
+        android:layout_weight="0.55"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/grade10Heading"
+        android:id="@+id/grade10Heading"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_above="@+id/trigFunctions"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trigFunctions"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:id="@+id/trigFunctions"
+        android:layout_marginTop="41dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:text="@string/trigInvestigation"
+        android:id="@+id/trigInvestigation"
+        android:background="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/trigFunctions"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/euclidean"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:id="@+id/euclidean"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/trigInvestigation"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quadrilaterals"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:textSize="16sp"
+        android:id="@+id/quadrilaterals"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/white"
+        android:textAlignment="center"
+        android:layout_below="@+id/euclidean"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:textSize="16sp"
+        android:text="@string/exemplarPaperQuestions"
+        android:id="@+id/exemplarPaperQuestions"
+        android:background="@android:color/white"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/quadrilaterals"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exemplarPaperMemos"
+        android:id="@+id/exemplarPaperMemos"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="@android:color/white"
+        android:layout_below="@+id/exemplarPaperQuestions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
+    </ScrollView>
